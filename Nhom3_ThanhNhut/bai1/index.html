@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tính số nguyên tố</title>
+    <script>
+      function handleSubmit(event) {
+        event.preventDefault();
+        const a = parseInt(document.getElementById("a").value);
+        const b = parseInt(document.getElementById("b").value);
+
+        const result = sumOfPrimes(a, b);
+        document.getElementById(
+          "arrPrime"
+        ).innerHTML = `Các số nguyên tố là: ${result.primes.join(",")}`;
+        document.getElementById(
+          "result"
+        ).innerHTML = `Tổng các số nguyên tố từ ${a} đến ${b} là: ${result.sum}`;
+      }
+    </script>
+  </head>
+  <body>
+    <h2 style="color: rgb(201, 17, 17)">Tính số nguyên tố</h2>
+    <form onsubmit="handleSubmit(event);">
+      <label for="a">Nhập số a</label>
+      <input type="number" id="a" name="a" required />
+      <br />
+      <label for="b">Nhập số b</label>
+      <input type="number" id="b" name="b" required />
+      <br />
+      <button style="background-color: rgb(106, 233, 117)" type="submit">
+        Submit
+      </button>
+    </form>
+    <div id="arrPrime"></div>
+    <div id="result"></div>
+    <script src="./main.js"></script>
+  </body>
+</html>

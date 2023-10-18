@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  top: 0;
+  padding: 0;
+}
+.container {
+  border-radius: 4px;
+  background-color: white;
+  margin: 100px auto;
+  height: 830px;
+  width: 1213px;
+}
+body {
+  background-color: #bfc8e6;
+}
+.nvabar-left {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  border-radius: 4px;
+  width: 327px;
+  border: 1px solid var(--bfc-8-e-6, #bfc8e5);
+  padding: 16px 16px 16px 16px;
+}
+.input-seach {
+  border: none;
+  font-family: Poppins;
+  font-size: 16px;
+}
+.icon_search {
+  margin-right: 10px;
+}
+.header-title {
+  color: var(--151-b-32, #151b32);
+  font-family: Merriweather;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+input:focus-visible {
+  outline: none !important;
+}
+.nvabar-right {
+  display: flex;
+  font-size: 20px;
+}
+.nvabar-right ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 16px;
+  font-family: Poppins;
+  font-weight: 500;
+  opacity: 0.8;
+}
+.nvabar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.infor-users {
+  padding-left: 16px;
+}
+.infor-users ul li {
+  list-style: none;
+}
+.infor-users ul .user-name {
+  font-size: 18px;
+  font-weight: 900;
+  font-family: Merriweather;
+}
+.infor-users ul .address {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  margin-top: 2px;
+  font-family: Poppins;
+}
+.list-users {
+  display: flex;
+  float: left;
+  width: 31.7%;
+  height: 208px;
+  border-radius: 16px;
+  background: #fbfcff;
+  padding: 24px;
+  margin-bottom: 16px;
+  margin-right: 16px;
+  transition: all 0.4s;
+}
+.list-users:hover {
+  border: 1px solid #bfc8e5;
+  transform: translateY(-7px);
+  box-shadow: 0px 8px 23px 0px rgba(218, 224, 249, 0.7);
+}
+.content {
+  width: 100%;
+  gap: 16px;
+}
+.infor-users ul li {
+  /* display: flex;
+  justify-content: start;
+  align-items: center; */
+  float: left;
+}
+.infor-users ul li button {
+  padding: 2px 6px;
+  border-radius: 10px;
+  border: 1px solid var(--bfc-8-e-6, #bfc8e5);
+  background: #fff;
+  margin-bottom: 4px;
+  margin-right: 4px;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #516fd4;
+}
+
+.active {
+  padding: 16px;
+  background: #849fff;
+  border-radius: 8px;
+  color: white;
+}
+.container-content {
+  padding: 100px;
+}
